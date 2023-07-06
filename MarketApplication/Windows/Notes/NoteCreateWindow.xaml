@@ -1,0 +1,71 @@
+﻿<Window x:Class="Shaxsiy_Kabinet.Windows.Notes.NoteCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shaxsiy_Kabinet.Windows.Notes"
+        mc:Ignorable="d"
+        Title="NoteCreateWindow" 
+        Height="670" Width="500"
+        Background="#AEE2FF"
+        WindowStartupLocation="CenterScreen"
+     
+        >
+    <StackPanel>
+        <Label
+            Content="Title"
+            Height="40"
+            Foreground="#FF8551"
+            FontSize="20"
+            FontWeight="Bold"
+        />
+        <Border
+            Margin="0,5,0,5"
+            Height="50"
+            Background="#FAF0E4"
+            CornerRadius="10">
+
+            <TextBox
+                x:Name="tbTitle"
+                VerticalAlignment="Center"
+                MaxLength="50"
+                Margin="10,0,10,0"
+                Background="#FAF0E4"
+                FontSize="20"
+                Foreground="Black"
+                BorderThickness="0"
+                />
+
+        </Border>
+
+        <Label
+            Margin="0,10,0,0"
+            Content="Note"
+            Height="40"
+            Foreground="#FF8551"
+            FontSize="20"
+            FontWeight="Bold"
+        />
+        <RichTextBox
+            x:Name="rtnNote"
+            VerticalAlignment="Center"
+            Height="400"
+            Margin="10,0,10,0"
+            Background="#FAF0E4"
+            FontSize="20"
+            Foreground="Black"
+            BorderThickness="0"
+        />
+
+        <Button
+            Margin="10"
+            Width="490"
+            Height="50"
+            Content="Create"
+            FontSize="30"
+            FontWeight="Bold"
+            Foreground="#FF8551"
+            Click="Create_Button"/>
+
+    </StackPanel>
+</Window>
